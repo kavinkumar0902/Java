@@ -1,0 +1,15 @@
+import java.util.Arrays;
+	import java.util.Scanner;
+public class addelementsArray {
+	    public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+	        String[] arr = {"Kavin","Kabil"};
+	        System.out.println("Enter a name to add");
+	        String name = sc.nextLine();
+	        String[] newarr = Arrays.copyOf(arr, arr.length  + 1);
+	        newarr[newarr.length-1] = name;
+	        for(int i=0;i<newarr.length;i++){
+	        System.out.println(newarr[i]);
+	        }
+	    }
+	}
