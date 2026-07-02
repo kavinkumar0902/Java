@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class twodArray {
+    public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter the size of the 1st array");
+       int s1 = sc.nextInt();
+       System.out.println("Enter the size of the 2nd array");
+       int s2 = sc.nextInt();
+       int[][] arr = new int[s1][s2];
+       for(int i=0;i<s1;i++){
+           for(int j=0;j<s2;j++){
+               System.out.println("Enter the elements of the arr[" + i + "]["+j+"]");
+               arr[i][j]=sc.nextInt();
+           }
+       }
+       System.out.println("Elements are ");
+       for(int[] row : arr){
+           for(int num : row){
+           System.out.print(num + " ");
+       }
+       System.out.println();
+       }
+       
+    }
+}
