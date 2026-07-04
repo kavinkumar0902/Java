@@ -1,0 +1,40 @@
+class Student{
+	int id;
+	int marks;
+	int rank;
+	String name;
+	int mobNo;
+	String address;
+	
+	Student(int id,int marks,int rank, String name, int mobNo, String address){
+		this.id = id;
+		this.marks = marks;
+		this.rank = rank;
+		this.name = name;
+		this.mobNo = mobNo;
+		this.address = address;
+		
+	}
+	
+	void acadamic() {
+		System.out.println(id);
+		System.out.println(marks);
+		System.out.println(rank);
+	}
+	
+	void personal() {
+		System.out.println(name);
+		System.out.println(mobNo);
+		System.out.println(address);
+	}
+	
+}
+public class classObj {
+	public static void main(String[] margs) {
+		Student S1 = new Student(1,99,2,"kavin",994243937,"Ramnad");
+		
+		S1.personal();
+		S1.acadamic();
+	}
+
+}
