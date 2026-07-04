@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    
+int fruits(int o,int b, int rs){
+    if(o < b){
+        rs = rs + (b - o);
+       
+        
+    }else if(o > b){
+        rs = rs - (o - b);
+        
+    }
+    return rs;
+}
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Solution s = new Solution();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        System.out.println(s.fruits(a, b, c));
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
